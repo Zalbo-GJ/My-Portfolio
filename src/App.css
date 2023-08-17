@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,100;1,200;1,500&display=swap");
 .App {
   background-image: url("./images/Background.png");
-  background-size: cover;
+  background-size: auto;
   font-family: "Poppins", sans-serif;
 }
 .hero {
@@ -275,15 +275,15 @@ strong {
 }
 
 .my-services {
-
   background-color: #dedede00;
   height: 100vh;
 }
-.page-title{
+.page-title {
   display: flex;
   justify-content: center;
 }
-.card {
+.s-card {
+  background-color: #7300ff;
   position: relative;
   width: 360px;
   height: 500px;
@@ -357,16 +357,305 @@ strong {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
-.card-content img{
+.card-content h2{
+  color: #ec634be1;
+}
+.card-content p{
+  padding: 0 1rem 0 1rem;
+  font-size: 14px;
+  font-weight: 300;
+}
+.card-content img {
   width: 70%;
 }
-.service-card{
+.service-card {
   margin-top: 250px;
 }
-.service-body{
+.service-body {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+.my-projects {
+  background-color: #dedede00;
+  /* height: 100vh; */
+}
+.p-card {
+  width: 850px;
+  height: 450px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.p-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: #6a2c70;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 10px solid #6a2c70;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(0deg);
+  background-image: url('./images/myWeb.png');
+  background-size: cover;
+}
+
+.card-back {
+  background-color: #f08a5d;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 10px solid #f08a5d;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(180deg);
+  background-image: url('./images/phone.png');
+  background-size: cover;
+}
+.projects-body {
+  margin-top: 150px;
+  margin-bottom: 150px;
+
+  width: 100%;
+  display: grid;
+  justify-content: space-evenly;
+  grid-gap: 150px;
+  align-items: space-evenly;
+}
+.project{
+  display: flex;
+
+}
+.project-title{
+  margin-top: 10rem;
+  padding-left: 8rem;
+  flex: 2;
+
+}
+.project-title h2{
+  font-size: 30px;
+
+}
+.project-display{
+  flex: 3;
+  display: flex;
+  justify-content: center;
+}
+/* .projects-body > :nth-child(1) {
+  position: relative;
+  left: 440px;
+} */
+/* .projects-body > :nth-child(2) {
+  position: relative;
+  right: 440px;
+}
+.projects-body > :nth-child(3) {
+  position: relative;
+  left: 360px;
+} */
+
+.testimonial-card {
+  width: 500px;
+  height: 350px;
+  border-radius: 20px;
+  background: #e0e0e0;
+  /* box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff; */
+}
+.testimonial-card:hover {
+  transform: scale(1.02);
+  opacity: 1;
+}
+
+.testimonials-body {
+  margin-top: 150px;
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.testimonials {
+  background-color: #dedede23;
+  height: 80vh;
+}
+.testimonial-swiper {
+  width: 80%;
+}
+.inputGroup {
+  font-family: "Segoe UI", sans-serif;
+  margin: 1em 0 1em 0;
+  max-width: 300px;
+  position: relative;
+}
+
+.inputGroup .form-input {
+  font-size: 100%;
+  padding: 1.3em;
+  outline: none;
+  border: 2px solid rgb(235, 188, 249);
+  background-color: transparent;
+  border-radius: 20px;
+  width: 85%;
+}
+
+.inputGroup label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(100, 100, 100);
+}
+
+.inputGroup :is(.form-input:focus, .form-input:valid) ~ label {
+  transform: translateY(-50%) scale(0.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #c7a5d7;
+}
+
+.inputGroup :is(.form-input:focus, .form-input:valid) {
+  border-color: rgb(150, 150, 200);
+}
+.message-box .form-input {
+  height: 60px;
+  width: 88%;
+}
+
+.form {
+  width: 300px;
+}
+.form-title {
+  text-align: center;
+  
+  margin-top: 2rem;
+  margin-bottom:5rem;
+  color: rgba(252, 252, 252, 0.897);
+  position: relative;
+  z-index: 10;
+}
+.contact-form {
+  display: flex;
+  margin-top: 4rem;
+  justify-content: center;
+  /* align-items: center; */
+  background-image: url("./images/c.jpeg");
+  background-size: auto;
+  width: 400px;
+  height: 500px;
+  box-shadow: 3px 16px 38px 10px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: 3px 16px 38px 10px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 3px 16px 38px 10px rgba(0, 0, 0, 0.17);
+  border-radius: 13px 13px 13px 13px;
+  -webkit-border-radius: 13px 13px 13px 13px;
+  -moz-border-radius: 13px 13px 13px 13px;
+}
+.glass {
+  position: absolute;
+  border-radius: 13px;
+  margin-top: 4rem;
+  background-color: #8e51ea4f;
+  width: 400px;
+  height: 500px;
+}
+.contact-me {
+  height: 100vh;
+  background-color: rgba(181, 149, 251, 0.107);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-left {
+  display: block;
+  /* justify-content: center; */
+  flex: 10;
+}
+
+.contact-right {
+  display: flex;
+  justify-content: center;
+  flex: 8;
+}
+.contact-right img {
+  margin-top: 5rem;
+  padding-right: 5rem;
+  width: 900px;
+}
+.send-button {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+}
+.wrap-contact {
+  display: flex;
+  justify-content: center;
+}
+.contact-title {
+  display: block;
+
+}
+
+.contact-title h2 {
+  font-size: 30px;
+  text-align: center;
+}
+.contact-title span {
+  font-size: 35px;
+  text-align: center;
+  color: #ec634be1;
+}
+.contact-title div {
+  display: flex;
+  justify-content: center;
+}
+.contact-title p {
+  font-size: 17px;
+  text-align: center;
+  width: 60%;
+}
+.footer{
+  height: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(181, 149, 251, 0.107);
+}
+.footer div{
+  height: 5px;
+  width: 500px;
+  background-color: rgb(84, 77, 105);
+  border-radius: 10px;
+}
+.footer p{
+  font-size: 18px;
+  color: #5b5959;
 }
