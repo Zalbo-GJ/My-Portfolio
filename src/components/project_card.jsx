@@ -1,12 +1,16 @@
-function ProjectCard() {
+function ProjectCard({frontImage, backImage}) {
   return (
     <div className="project-card">
-      <div class="p-card">
-        <div class="card-inner">
-          <div class="card-front">
-          </div>
-          <div class="card-back">
-          </div>
+      <div className="p-card">
+        <div className="card-inner">
+          <div
+            className="card-front"
+            style={{ backgroundImage: `url(${frontImage})` }}
+          ></div>
+          <div
+            className="card-back"
+            style={{ backgroundImage: `url(${backImage})` }}kim
+          ></div>
         </div>
       </div>
     </div>

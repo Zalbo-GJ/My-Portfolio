@@ -1,4 +1,5 @@
 import React from "react";
+import kim from "../images/kim.jpeg";
 import { Autoplay, Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import SwiperCore from "swiper/core";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -39,40 +40,50 @@ function Testimonials() {
             depth: 100,
             modifier: 3,
             // slideShadows:false
-
-
           }}
           grabCursor={true}
-          autoplay={{ delay: 4000 }}
+          autoplay={{ delay: 7000 }}
           spaceBetween={5}
           slidesPerView={3}
           navigation
-         
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
-
-          className= "testimonial-swiper"
+          className="testimonial-swiper"
         >
           <SwiperSlide>
-            <TestimonialCard></TestimonialCard>
+            <TestimonialCard
+              name="Kim"
+              image={kim}
+              testimonial="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores id porro nesciunt vel pariatur laboriosam nihil numquam perferendis magni placeat officiis, facere dignissimos commodi nam tempore odit, iste incidunt!"
+            />{" "}
           </SwiperSlide>
           <SwiperSlide>
-            <TestimonialCard></TestimonialCard>
+            <TestimonialCard
+              name="Kim"
+              image={kim}
+              testimonial="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores id porro nesciunt vel pariatur laboriosam nihil numquam perferendis magni placeat officiis, facere dignissimos commodi nam tempore odit, iste incidunt!"
+            />{" "}
           </SwiperSlide>
           <SwiperSlide>
-            <TestimonialCard></TestimonialCard>
+            <TestimonialCard
+              name="Kim"
+              image={kim}
+              testimonial="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores id porro nesciunt vel pariatur laboriosam nihil numquam perferendis magni placeat officiis, facere dignissimos commodi nam tempore odit, iste incidunt!"
+            />{" "}
           </SwiperSlide>
           <SwiperSlide>
-            <TestimonialCard></TestimonialCard>
+            <TestimonialCard
+              name="Ababa tesfaye"
+              image={kim}
+              testimonial="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores id porro nesciunt vel pariatur laboriosam nihil numquam perferendis magni placeat officiis, facere dignissimos commodi nam tempore odit, iste incidunt!"
+            />{" "}
           </SwiperSlide>
           <SwiperSlide>
-            <TestimonialCard></TestimonialCard>
-          </SwiperSlide>
-          <SwiperSlide>
-            <TestimonialCard></TestimonialCard>
-          </SwiperSlide>
-          <SwiperSlide>
-            <TestimonialCard></TestimonialCard>
+            <TestimonialCard
+              name="ran out of names"
+              image={kim}
+              testimonial="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores id porro nesciunt vel pariatur laboriosam nihil numquam perferendis magni placeat officiis, facere dignissimos commodi nam tempore odit, iste incidunt!"
+            />{" "}
           </SwiperSlide>
         </Swiper>
       </div>

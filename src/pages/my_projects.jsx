@@ -1,4 +1,6 @@
 import ProjectCard from "../components/project_card";
+import frontImage from "../images/myWeb.png";
+import backImage from "../images/phone.png";
 
 function MyProjects() {
   return (
@@ -21,13 +23,19 @@ function MyProjects() {
             </p>
           </div>
           <div className="project-display">
-            <ProjectCard></ProjectCard>
+            <ProjectCard
+              frontImage={frontImage}
+              backImage={backImage}
+            ></ProjectCard>
           </div>
         </div>
         <div className="project">
           {" "}
           <div className="project-display">
-            <ProjectCard></ProjectCard>
+            <ProjectCard
+              frontImage={frontImage}
+              backImage={backImage}
+            ></ProjectCard>{" "}
           </div>
           <div className="project-title">
             <h2>Netflix</h2>
@@ -51,7 +59,10 @@ function MyProjects() {
             </p>
           </div>
           <div className="project-display">
-            <ProjectCard></ProjectCard>
+            <ProjectCard
+              frontImage={frontImage}
+              backImage={backImage}
+            ></ProjectCard>{" "}
           </div>
         </div>
       </div>

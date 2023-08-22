@@ -1,4 +1,5 @@
 import ServiceCard from "../components/service_card";
+import uxGif from "../images/ui_design.gif";
 
 function MyServices() {
   return (
@@ -8,9 +9,21 @@ function MyServices() {
       </div>
       <div className="service-body">
         {" "}
-        <ServiceCard></ServiceCard>
-        <ServiceCard></ServiceCard>
-        <ServiceCard></ServiceCard>
+        <ServiceCard
+          title="Front-End Development"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          image={uxGif}
+        />{" "}
+        <ServiceCard
+          title="Back-End Development"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          image={uxGif}
+        />{" "}
+        <ServiceCard
+          title="UI/UX Design"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          image={uxGif}
+        />
       </div>
     </div>
   );
