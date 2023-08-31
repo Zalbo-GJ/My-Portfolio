@@ -558,7 +558,7 @@ strong {
   /* margin-top: 1.5625rem; */
   /* margin-left: 16%; */
   margin-left: 10%;
-  width: 48.5rem;
+  width: 86.22vh;
   /* visibility: hidden; */
   z-index: 10;
   position: absolute;
@@ -568,7 +568,8 @@ strong {
 
 .my-services {
   background-color: #dedede00;
-  height: 100vh;
+  height: auto;
+  padding-bottom: 20vh;
 }
 .page-title {
   display: flex;
@@ -796,7 +797,8 @@ strong {
 }
 .testimonials {
   background-color: #dedede23;
-  height: 80vh;
+  height: auto;
+  padding-bottom: 10vh;
 }
 .testimonial-swiper {
   width: 80%;
@@ -930,7 +932,7 @@ strong {
   height: 31.25rem;
 }
 .contact-me {
-  height: 100vh;
+  height: auto;
   /* background-color: rgba(181, 149, 251, 0.107); */
   background-color: #f3eefb;
   display: flex;
@@ -1608,11 +1610,11 @@ strong {
   .canva-container {
     margin-top: 10rem;
 
-    width: 50%;
-    height: 30vh;
+    width: 40%;
+    height: 28vh;
     position: absolute;
     top: 3rem;
-    right: -3rem;
+    right: 0rem;
   }
   .my-services {
     padding: 0.625rem;
@@ -1632,8 +1634,8 @@ strong {
     width: 80%;
   }
   .s-card {
-    width: 12.5rem;
-    height: 18.625rem;
+    width: 14.5rem;
+    height: 22.625rem;
     border-radius: 0.75rem;
   }
 
@@ -1641,14 +1643,14 @@ strong {
     position: absolute;
     top: 0.125rem;
     left: 0.125rem;
-    width: 12.25rem;
-    height: 20.375rem;
+    width: 14.25rem;
+    height: 22.375rem;
   }
 
   .card-content {
     position: absolute;
-    width: 12.5rem;
-    height: 18.75rem;
+    width: 14.5rem;
+    height: 22.75rem;
   }
   .card-content h2 {
     color: #ec634be1;
@@ -1794,7 +1796,7 @@ strong {
   }
 
   .contact-me {
-    margin-top: 5rem;
+    margin-top: 0rem;
     height: 80vh;
     background-color: rgba(181, 149, 251, 0.107);
     display: flex;
@@ -2028,7 +2030,7 @@ strong {
   .intro-right {
     flex: 2;
     position: relative;
-    top: -15rem;
+    top: -14rem;
   }
   .intro-right img {
     margin-top: 23.125vh;

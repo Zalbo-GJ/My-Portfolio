@@ -1,13 +1,18 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function ContactForm() {
   const form = useRef();
 
   const sendEmail = (e) => {
-    console.log("sent");
     e.preventDefault();
 
+    if (!navigator.onLine) {
+      toast.error("No internet connection. Please try again later.");
+      return;
+    }
     emailjs
       .sendForm(
         "service_p2f8hrv",
@@ -19,14 +24,17 @@ function ContactForm() {
         (result) => {
           console.log(result.text);
           form.current.reset(); // Add this line to reset the form after successful submission
+          toast.success("Email sent successfully! He will be contacting you soon.");
         },
         (error) => {
           console.log(error.text);
+          toast.error("Failed to send email. Please try again later.");
         }
       );
   };
   return (
     <div className="form">
+      <ToastContainer  />
       <div className="form-title">
         <h3>Send me a message</h3>
       </div>
@@ -37,6 +45,8 @@ function ContactForm() {
             className="form-input"
             required
             type="text"
+            autoComplete="off"
+
           ></input>
           <label for="name">Full Name</label>
         </div>
@@ -45,6 +55,8 @@ function ContactForm() {
             name="from_email"
             className="form-input"
             required
+            autoComplete="off"
+
             type="email"
           ></input>
           <label for="name">Email</label>
@@ -56,6 +68,8 @@ function ContactForm() {
             required
             type="text"
             maxLength={200}
+            autoComplete="off"
+
             style={{ resize: "none" }}
           ></textarea>
           <label for="name">Message</label>
