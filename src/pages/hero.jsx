@@ -1,13 +1,14 @@
 import Intro from "../components/intro";
-import NavBar from "../components/nav_bar";
+import { usePageStyle } from "../darkMode";
 
 function Hero() {
+  const pageStyle = usePageStyle();
+
   return (
-    <div className="hero">
-      <NavBar></NavBar>
+    <div className="hero" style={pageStyle}>
+
       <Intro></Intro>
     </div>
   );
 }
-
 export default Hero;

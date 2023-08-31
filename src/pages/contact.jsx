@@ -1,8 +1,17 @@
 import ContactForm from "../components/contact_form";
-import myGif from "../images/contact_design.gif";
+import { usePageStyle } from "../darkMode";
+import myGif from "../images/contacts/contact_design.gif";
+import myGifDark from "../images/contacts/darkmode_contact.gif";
+import { useContext } from "react";
+import { themeContext } from "../Context";
+
 function ContactMe() {
+  const pageStyle = usePageStyle();
+  const theme = useContext(themeContext);
+
+  const darkMode = theme.state.darkMode;
   return (
-    <div className="contact-me">
+    <div className="contact-me" style={pageStyle}>
       <div className="contact-left">
         {" "}
         <div className="contact-title">
@@ -12,9 +21,10 @@ function ContactMe() {
           <div>
             {" "}
             <p>
-              Let's Get Together and make a meaningful work Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Quasi officiis distinctio
-              explicabo, voluptatem aliquam natus. Quidem, 
+              Let's come together to create impactful work that transcends
+              boundaries. I
+              look forward to the opportunity of collaborating with you. Contact
+              me, and let's transform ideas into meaningful reality.
             </p>
           </div>
         </div>
@@ -26,7 +36,7 @@ function ContactMe() {
         </div>
       </div>
       <div className="contact-right">
-        <img src={myGif} alt="" />
+        <img src={darkMode ? myGifDark : myGif} alt="People illustrations by Storyset" />
       </div>
     </div>
   );

@@ -1,9 +1,10 @@
 import React from "react";
-import kim from "../images/kim.jpeg";
+import kim from "../images/testimonial/kim.jpeg";
 import { Autoplay, Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import SwiperCore from "swiper/core";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow } from "swiper";
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -20,6 +21,15 @@ function Testimonials() {
       {" "}
       <div className="page-title">
         <h2 className="page-name">Testimonials</h2>
+      </div>
+      <div className="page-desc">
+        <p>
+          Experience the journey of innovation through the lens of those who've
+          witnessed it firsthand. Explore the words of clients and colleagues
+          who have seen their concepts transformed into captivating digital
+          experiences. These testimonials offer a glimpse into the seamless
+          blend of intuitive design and expert coding that define my work.
+        </p>
       </div>
       <div className="testimonials-body">
         <Swiper
@@ -45,7 +55,11 @@ function Testimonials() {
           autoplay={{ delay: 7000 }}
           spaceBetween={5}
           slidesPerView={3}
-          navigation
+          navigation={{
+            nextEl: ".next",
+            prevEl: ".prev",
+            clickable: true,
+          }}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
           className="testimonial-swiper"
@@ -86,6 +100,14 @@ function Testimonials() {
             />{" "}
           </SwiperSlide>
         </Swiper>
+      </div>
+      <div className="testimonial-nav">
+        <button className="prev">
+          <IoIosArrowBack />
+        </button>
+        <button className="next">
+          <IoIosArrowForward />
+        </button>
       </div>
     </div>
   );
