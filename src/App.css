@@ -1,22 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,100;1,200;1,500&display=swap");
 body {
   overflow-x: hidden;
-    background-color: #f9f9f9;
-
+  background-color: #f9f9f9;
 }
 .App {
-  /* background-image: url("./images/Background.png"); */
   background-size: auto;
   font-family: "Poppins", sans-serif;
-  /* background-color: #f9f9f9; */
-  /* z-index: -101; */
+
 }
-.main-background{
+.main-background {
   display: block;
 }
-.mobile-background, .tab-background{
+.mobile-background,
+.tab-background {
   display: none;
-
 }
 .hero {
   background-color: #dedede00;
@@ -1492,10 +1489,10 @@ strong {
     padding: 0.625rem;
     height: auto;
   }
-  .tab-background{
+  .tab-background {
     display: block;
   }
-  .main-background{
+  .main-background {
     display: none;
   }
 
@@ -1862,7 +1859,6 @@ strong {
     width: 60%;
   }
   .footer {
-    
     height: 5rem;
     display: flex;
     justify-content: center;
@@ -1898,11 +1894,11 @@ strong {
     overflow: hidden;
     overflow-x: hidden;
   }
-  .mobile-background{
+  .mobile-background {
     display: block;
   }
-  .main-background{
-display: none;
+  .main-background {
+    display: none;
   }
   .hero {
     height: 85vh;
@@ -2214,7 +2210,6 @@ display: none;
     flex: 3;
     display: flex;
     justify-content: center;
-
   }
   .projects-body > :nth-child(2) {
     display: flex;
