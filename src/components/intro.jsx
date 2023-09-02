@@ -45,10 +45,18 @@ function Intro() {
         </div>
         <div className="socials">
           <h4 style={textStyle}>Checkout my socials</h4>
-          <a href="https://www.linkedin.com/in/zalbowossn-jagema-18590823a/">
+          <a
+            href="https://www.linkedin.com/in/zalbowossn-jagema-18590823a/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <BsLinkedin style={{ color: "orange", fontSize: "36px" }} />
           </a>
-          <a href="https://github.com/Zalbo-GJ">
+          <a
+            href="https://github.com/Zalbo-GJ"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaGithubSquare style={{ color: "orange", fontSize: "40px" }} />
           </a>
         </div>

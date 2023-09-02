@@ -24,7 +24,7 @@ function App() {
       }
     };
 
-    const links = document.querySelectorAll(".nav-link");
+    const links = document.querySelectorAll(".page-nav");
     links.forEach((link) => {
       link.addEventListener("click", handleNavigation);
     });

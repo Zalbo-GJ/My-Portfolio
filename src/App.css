@@ -1514,7 +1514,7 @@ strong {
     top: 3.4375rem;
 
     transition: all 1.5s ease;
-    background-color: rgba(197, 108, 253, 0.449);
+    background-color: rgba(221, 166, 255, 0.868);
   }
   .nav-left {
     margin-left: 0.625rem;
@@ -1934,7 +1934,7 @@ strong {
     z-index: 11111;
 
     transition: all 1.5s ease;
-    background-color: rgba(197, 108, 253, 0.449);
+    background-color: rgba(221, 166, 255, 0.868);
   }
   .nav-left {
     margin-left: 0.625rem;
@@ -2038,6 +2038,7 @@ strong {
     /* width: 4rem; */
     height: 30vh;
     align-items: end;
+    z-index: 22222;
   }
   .socials a {
     font-size: larger;

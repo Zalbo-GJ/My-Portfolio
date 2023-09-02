@@ -66,19 +66,27 @@ function NavBar() {
       <div className={navActive ? "nav-responsive" : "nav-right"}>
         <ul className="nav-lists" style={textStyle}>
           <li>
-            <a style={{textDecoration: 'none',margin: "1rem", color: "#ec634be1"}}  href="#home" className="nav-link" onClick={showNav}>
+            <a style={{textDecoration: 'none',margin: "1rem", color: "#ec634be1"}}  href="#home" className="nav-link page-nav" onClick={showNav}>
               <h4>Home</h4>
             </a>
           </li>
           <li>
-            <a style={{textDecoration: 'none',margin: "1rem", }} href="#projects" className="nav-link" onClick={showNav}>
+            <a style={{textDecoration: 'none',margin: "1rem", }} href="#projects" className="nav-link page-nav" onClick={showNav}>
               <h4 style={textStyle}>Projects</h4>
             </a>
           </li>
           <li>
-            <a style={{textDecoration: 'none',margin: "1rem"}}  href="https://drive.google.com/file/d/1zyfd2TZ01OmqkZOig_mNUapSgOVchV1G/view?usp=sharing" download={true} className="nav-link" onClick={showNav}>
-              <h4 style={textStyle}>Resume</h4>
-            </a>
+          <a 
+  style={{textDecoration: 'none',margin: "1rem"}}  
+  href="https://drive.google.com/file/d/1zyfd2TZ01OmqkZOig_mNUapSgOVchV1G/view?usp=sharing" 
+  download={true} 
+  className="nav-link" 
+  onClick={showNav}
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <h4 style={textStyle}>Resume</h4>
+</a>
           </li>
         </ul>
       </div>
