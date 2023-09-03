@@ -906,6 +906,9 @@ strong {
   width: 100%; /* adjust this value as per your requirement */
   box-sizing: border-box;
 }
+textarea::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari and Opera */
+}
 .form {
   width: 20.75rem;
   display: flex;

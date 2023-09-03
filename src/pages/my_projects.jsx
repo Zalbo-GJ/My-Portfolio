@@ -29,7 +29,7 @@ function MyProjects() {
           <div className="project-title">
             <h2>Movie </h2>
             <p>
-              Introducing Movie: a dynamic responsive website showcasing the
+              Introducing Movie - a dynamic responsive website showcasing the
               latest movies and TV shows. This platform not only offers a
               visually captivating experience but also provides essential
               details like descriptions, ratings, stars, posters, and genres for

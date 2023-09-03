@@ -24,7 +24,9 @@ function ContactForm() {
         (result) => {
           console.log(result.text);
           form.current.reset(); // Add this line to reset the form after successful submission
-          toast.success("Email sent successfully! He will be contacting you soon.");
+          toast.success(
+            "Email sent successfully! I will be contacting you soon."
+          );
         },
         (error) => {
           console.log(error.text);
@@ -34,7 +36,7 @@ function ContactForm() {
   };
   return (
     <div className="form">
-      <ToastContainer  />
+      <ToastContainer />
       <div className="form-title">
         <h3>Send me a message</h3>
       </div>
@@ -46,7 +48,6 @@ function ContactForm() {
             required
             type="text"
             autoComplete="off"
-
           ></input>
           <label for="name">Full Name</label>
         </div>
@@ -56,7 +57,6 @@ function ContactForm() {
             className="form-input"
             required
             autoComplete="off"
-
             type="email"
           ></input>
           <label for="name">Email</label>
@@ -69,8 +69,11 @@ function ContactForm() {
             type="text"
             maxLength={200}
             autoComplete="off"
-
-            style={{ resize: "none" }}
+            style={{
+              resize: "none",
+              scrollbarWidth: "none" /* For Firefox */,
+              msOverflowStyle: "none" /* For Internet Explorer and Edge */,
+            }}
           ></textarea>
           <label for="name">Message</label>
         </div>
