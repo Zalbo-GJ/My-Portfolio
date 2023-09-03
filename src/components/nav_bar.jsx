@@ -2,9 +2,10 @@ import { useContext, useState } from "react";
 import { HiMenu } from "react-icons/hi";
 import { RiCloseFill } from "react-icons/ri";
 import { themeContext } from "../Context";
-import { useTextStyle } from "../darkMode";
+import { useLinkStyle, useTextStyle } from "../darkMode";
 function NavBar() {
   const textStyle = useTextStyle();
+  const linkStyle = useLinkStyle();
   const [navActive, setActive] = useState(false);
 
   const theme = useContext(themeContext);
@@ -66,32 +67,46 @@ function NavBar() {
       <div className={navActive ? "nav-responsive" : "nav-right"}>
         <ul className="nav-lists" style={textStyle}>
           <li>
-            <a style={{textDecoration: 'none', color: "#ec634be1"}}  href="#home" className="nav-link page-nav" onClick={showNav}>
+            <a
+              style={{ textDecoration: "none", color: "#ec634be1" }}
+              href="#home"
+              className="nav-link page-nav"
+              onClick={showNav}
+            >
               <h4>Home</h4>
             </a>
           </li>
           <li>
-            <a style={{textDecoration: 'none',}} href="#projects" className="nav-link page-nav" onClick={showNav}>
-              <h4 style={textStyle}>Projects</h4>
+            <a
+              style={{ textDecoration: "none", color: linkStyle.color }}
+              href="#projects"
+              className="nav-link page-nav"
+              onClick={showNav}
+            >
+              <h4>Projects</h4>
             </a>
           </li>
           <li>
-          <a 
-  style={{textDecoration: 'none'}}  
-  href="https://drive.google.com/file/d/1zyfd2TZ01OmqkZOig_mNUapSgOVchV1G/view?usp=sharing" 
-  download={true} 
-  className="nav-link" 
-  onClick={showNav}
-  target="_blank" 
-  rel="noopener noreferrer"
->
-  <h4 style={textStyle}>Resume</h4>
-</a>
+            <a
+              style={{ textDecoration: "none", color: linkStyle.color }}
+              href="https://drive.google.com/file/d/1zyfd2TZ01OmqkZOig_mNUapSgOVchV1G/view?usp=sharing"
+              download={true}
+              className="nav-link"
+              onClick={showNav}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h4>Resume</h4>
+            </a>
           </li>
         </ul>
       </div>
       <button className="ham-btn" on onClick={showNav} style={textStyle}>
-        {navActive ? <RiCloseFill style={{fontSize: "2.3rem"}} /> : <HiMenu style={{fontSize: "2.3rem"}}  />}
+        {navActive ? (
+          <RiCloseFill style={{ fontSize: "2.3rem" }} />
+        ) : (
+          <HiMenu style={{ fontSize: "2.3rem" }} />
+        )}
       </button>
     </div>
   );

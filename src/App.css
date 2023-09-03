@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,100;1,200;1,500&display=swap");
-html{
-  font-size:0.891vw;
+html {
+  font-size: 0.891vw;
 }
 body {
   overflow-x: hidden;
@@ -333,6 +333,10 @@ body {
 }
 .nav-lists a {
   color: rgb(51, 40, 80);
+}
+.nav-link :hover {
+  color: rgb(166, 140, 231);
+  transition: color 0.2s ease-in-out; 
 }
 .intro {
   display: flex;
@@ -1025,7 +1029,7 @@ textarea::-webkit-scrollbar {
 /* Responsive for 1800 and down */
 
 @media only screen and (max-width: 1500px) and (min-width: 900px) {
-  html{
+  html {
     font-size: 1vw;
   }
   * {
@@ -1133,7 +1137,7 @@ textarea::-webkit-scrollbar {
     width: 40vw;
     position: relative;
     /* /* right: 0;  */
-    top: 8rem; 
+    top: 8rem;
     /* bottom: 0; */
   }
   .canva-container {
@@ -1464,7 +1468,7 @@ textarea::-webkit-scrollbar {
 }
 /* Responsive for 800  */
 @media only screen and (max-width: 900px) and (min-width: 700px) {
-  html{
+  html {
     font-size: 2vw;
   }
   * {
@@ -1504,7 +1508,7 @@ textarea::-webkit-scrollbar {
     top: 2vh;
     z-index: 11111;
     backdrop-filter: blur(2px);
-    box-shadow: 0px 11px 132px -19px rgba(0,0,0,0.75);
+    box-shadow: 0px 11px 132px -19px rgba(0, 0, 0, 0.75);
     background-color: rgba(246, 232, 255, 0.868);
     border-radius: 0.7rem;
     transition: all 1.5s ease;
@@ -1533,7 +1537,7 @@ textarea::-webkit-scrollbar {
     top: 2vh;
     z-index: 11111;
     backdrop-filter: blur(2px);
-    box-shadow: 0px 11px 132px -19px rgba(0,0,0,0.75);
+    box-shadow: 0px 11px 132px -19px rgba(0, 0, 0, 0.75);
     background-color: rgba(246, 232, 255, 0.868);
     border-radius: 0.7rem;
     transition: all 1.5s ease;
@@ -1880,7 +1884,7 @@ textarea::-webkit-scrollbar {
 /* Responsive for 900 and down */
 
 @media only screen and (max-width: 700px) {
-  html{
+  html {
     font-size: 16px;
   }
   * {
@@ -1930,7 +1934,7 @@ textarea::-webkit-scrollbar {
     text-align: center;
     /* height: 10vh; */
     border-radius: 0.7rem;
-    
+
     transition: all 1.5s ease;
     height: auto;
     width: 95vw;
@@ -1939,7 +1943,7 @@ textarea::-webkit-scrollbar {
     top: 2vh;
     z-index: 11111;
     backdrop-filter: blur(2px);
-    box-shadow: 0px 11px 132px -19px rgba(0,0,0,0.75);
+    box-shadow: 0px 11px 132px -19px rgba(0, 0, 0, 0.75);
     background-color: rgba(246, 232, 255, 0.868);
   }
   .nav-left {
@@ -1964,12 +1968,10 @@ textarea::-webkit-scrollbar {
     top: 2vh;
     z-index: 11111;
     backdrop-filter: blur(2px);
-    box-shadow: 0px 11px 132px -19px rgba(0,0,0,0.75);
+    box-shadow: 0px 11px 132px -19px rgba(0, 0, 0, 0.75);
     background-color: rgba(246, 232, 255, 0.868);
     border-radius: 0.7rem;
     transition: all 1.5s ease;
-
-
   }
 
   .nav-lists {
@@ -2198,7 +2200,7 @@ textarea::-webkit-scrollbar {
   .projects-body {
     margin-top: 0.375rem;
     margin-bottom: 5.375rem;
-    
+
     padding: 0 2rem 0 2rem;
     width: 100vw;
     display: grid;
@@ -2218,7 +2220,6 @@ textarea::-webkit-scrollbar {
   }
   .project-title h2 {
     font-size: 1rem;
-    
   }
   .project-title p {
     font-size: 0.8rem;
