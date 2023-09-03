@@ -66,18 +66,18 @@ function NavBar() {
       <div className={navActive ? "nav-responsive" : "nav-right"}>
         <ul className="nav-lists" style={textStyle}>
           <li>
-            <a style={{textDecoration: 'none',margin: "1rem", color: "#ec634be1"}}  href="#home" className="nav-link page-nav" onClick={showNav}>
+            <a style={{textDecoration: 'none', color: "#ec634be1"}}  href="#home" className="nav-link page-nav" onClick={showNav}>
               <h4>Home</h4>
             </a>
           </li>
           <li>
-            <a style={{textDecoration: 'none',margin: "1rem", height: '3rem'}} href="#projects" className="nav-link page-nav" onClick={showNav}>
+            <a style={{textDecoration: 'none',}} href="#projects" className="nav-link page-nav" onClick={showNav}>
               <h4 style={textStyle}>Projects</h4>
             </a>
           </li>
           <li>
           <a 
-  style={{textDecoration: 'none',margin: "1rem"}}  
+  style={{textDecoration: 'none'}}  
   href="https://drive.google.com/file/d/1zyfd2TZ01OmqkZOig_mNUapSgOVchV1G/view?usp=sharing" 
   download={true} 
   className="nav-link" 
