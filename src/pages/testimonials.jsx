@@ -1,5 +1,10 @@
 import React from "react";
-import kim from "../images/testimonial/kim.jpeg";
+import birukZewdu from "../images/testimonial/Biruk_Zewdu.jpg";
+import natnaelBekele from "../images/testimonial/Natnael_Bekele.jpg";
+import zerabruckMuluneh from "../images/testimonial/ZeraBruck_Muluneh.jpg";
+import mikiasDaniel from "../images/testimonial/Mikias_Daniel.jpg";
+import abelKidaneMariam from "../images/testimonial/Abel_KidaneMariam.jpg";
+
 import { Autoplay, Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import SwiperCore from "swiper/core";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -66,37 +71,37 @@ function Testimonials() {
         >
           <SwiperSlide>
             <TestimonialCard
-              name="Kim"
-              image={kim}
-              testimonial="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores id porro nesciunt vel pariatur laboriosam nihil numquam perferendis magni placeat officiis, facere dignissimos commodi nam tempore odit, iste incidunt!"
+              name="Natnael Bekele | Head Of Acadamy at A2SV"
+              image={natnaelBekele}
+              testimonial="In the face of adversity, Zalbo shines brightest. He once saved our project from a potential catastrophe with a brilliant solution. His ability to turn obstacles into triumphs is truly remarkable."
             />{" "}
           </SwiperSlide>
           <SwiperSlide>
             <TestimonialCard
-              name="Kim"
-              image={kim}
-              testimonial="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores id porro nesciunt vel pariatur laboriosam nihil numquam perferendis magni placeat officiis, facere dignissimos commodi nam tempore odit, iste incidunt!"
+              name="Zerabruck Muluneh | Colleague Software Engineer"
+              image={zerabruckMuluneh}
+              testimonial="It's with great pleasure that I highly recommend Zalbo. Working closely with him, I've been consistently amazed by his talent and dedication. His deep understanding of Flutter, coupled with his creativity, has resulted in products that exceeded my expectations."
             />{" "}
           </SwiperSlide>
           <SwiperSlide>
             <TestimonialCard
-              name="Kim"
-              image={kim}
-              testimonial="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores id porro nesciunt vel pariatur laboriosam nihil numquam perferendis magni placeat officiis, facere dignissimos commodi nam tempore odit, iste incidunt!"
+              name="Mikias Daniel | Product Manager"
+              image={mikiasDaniel}
+              testimonial="I wholeheartedly recommend Zalbowossn Gizaw for his exceptional skills, ambition, unwavering integrity, and problem-solving prowess. He's a resilient, altruistic team player, and I have complete confidence in his abilities."
             />{" "}
           </SwiperSlide>
           <SwiperSlide>
             <TestimonialCard
-              name="Ababa tesfaye"
-              image={kim}
-              testimonial="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores id porro nesciunt vel pariatur laboriosam nihil numquam perferendis magni placeat officiis, facere dignissimos commodi nam tempore odit, iste incidunt!"
+              name="Biruk Zewdu | Head Of Education at A2SV"
+              image={birukZewdu}
+              testimonial="Zalbowossn is a lifelong learner in the world of technology. He continuously seeks opportunities to expand his skillset and brings fresh, cutting-edge insights to our projects. His passion for staying updated is contagious."
             />{" "}
           </SwiperSlide>
           <SwiperSlide>
             <TestimonialCard
-              name="ran out of names"
-              image={kim}
-              testimonial="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores id porro nesciunt vel pariatur laboriosam nihil numquam perferendis magni placeat officiis, facere dignissimos commodi nam tempore odit, iste incidunt!"
+              name="Abel KidaneMariam | Web Developer at Eskalate"
+              image={abelKidaneMariam}
+              testimonial="Zalbo is the React maestro you want on your team. I've had the privilege of working closely with him, and he's a true gem. His expertise in development, attention to detail, and commitment to code quality consistently lead to exceptional outcomes."
             />{" "}
           </SwiperSlide>
         </Swiper>
